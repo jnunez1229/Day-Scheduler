@@ -98,3 +98,7 @@ textarea{
   
 }
 
+.saveBtn:active{
+  outline: none;
+}
+

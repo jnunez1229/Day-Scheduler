@@ -15,25 +15,29 @@ function hourUpdater() {
 
     // loop over time blocks
     $(".description").each(function() {
-      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+        
+        let text = localStorage.getItem($(this).attr("id"));
+        $(this).val(text);
 
-      // add class "past" if currentHour is greater than blockHour
-      if(currentHour > blockHour) {
-        $(this).addClass("past");
-      }
+        var blockHour = parseInt($(this).attr("id").split("-")[1]);
+
+        // add class "past" if currentHour is greater than blockHour
+        if(currentHour > blockHour) {
+            $(this).addClass("past");
+        }
      
-      //remove class "past" and add class "present" if currentHour = blockHourd
-      else if(currentHour === blockHour) {
-        $(this).removeClass("past");
-        $(this).addClass("present");
-      }
+        //remove class "past" and add class "present" if currentHour = blockHourd
+        else if(currentHour === blockHour) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        }
      
-      // remove class "past", remove class "present", add class "future" if time has passed
-      else {
-        $(this).removeClass("past");
-        $(this).removeClass("present");
-        $(this).addClass("future");
-      }
+        // remove class "past", remove class "present", add class "future" if time has passed
+        else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
       
     });
 }
@@ -43,6 +47,17 @@ hourUpdater();
 
 
 
+
+let saveTask = function() {
+    
+}
+
+$(".saveBtn").click(function(){
+    let data = $(this).attr("data-hour");
+    let blockText = $(`#${data}`).val();
+    
+    localStorage.setItem(data, blockText);
+});
 
 
 
