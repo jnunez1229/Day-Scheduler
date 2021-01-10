@@ -1,9 +1,42 @@
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
+/* Header */
+
+.jumbotron {
+  background-image: url(./images/estee-janssens-zni0zgb3bkQ-unsplash.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.jumbotron div{
+  background-color:  rgba(250, 201, 65, .7);
+  width: fit-content;
+  margin: 0 auto;
+
+  border-radius: 15px;
+  padding: 4px 10px;
+}
+
+.display-3{
+  font-family: 'EB Garamond', serif;
+  font-weight: 800;
+}
+
+/* container */
+
+.blue-calendar{
+  height: 800px;
+}
 textarea{
   background: transparent;
   border: none;
@@ -13,13 +46,7 @@ textarea{
   padding: 10px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
+
 
 .description{
   white-space: pre-wrap;
@@ -40,6 +67,7 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  
 }
 
 .past {
@@ -61,12 +89,15 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color:rgb(250, 201, 65);
   color: white;
+  outline: none;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 30px;
+  color: #000000;
   transition: all .3s ease-in-out;
+  
 }
 
