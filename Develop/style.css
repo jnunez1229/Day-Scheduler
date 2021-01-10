@@ -34,9 +34,6 @@ body {
 
 /* container */
 
-.blue-calendar{
-  height: 800px;
-}
 textarea{
   background: transparent;
   border: none;
@@ -70,18 +67,18 @@ textarea{
   
 }
 
-.past {
-  background-color: #d3d3d3;
+.present {
+  background-color:rgb(185, 160, 160);
   color: white;
 }
 
-.present {
-  background-color: #ff6961;
+.past {
+  background-color: #E86850;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color:  #587058;
   color: white;
 }
 
